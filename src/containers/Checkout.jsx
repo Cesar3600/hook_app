@@ -21,7 +21,7 @@ const Checkout = () => {
       <div className="Checkout-content">
         <h3>Lista de Pedidos</h3>
         {cart.map((product) => (
-          <div className="Checkout-item">
+          <div className="Checkout-item" key={product.id}>
             <div className="Checkout-element">
               <h4>{product.title}</h4>
               <span>

@@ -78,10 +78,18 @@ const useInitialState = () => {
     }, 0);
   };
 
+  const addToBuyer = (payload) => {
+    setState((prevState) => ({
+      ...prevState,
+      buyer: [...prevState.buyer, payload],
+    }));
+  };
+
   return {
     addToCart,
     removeFromCart,
     calculeQuantityOnCart,
+    addToBuyer,
     state,
   };
 };
