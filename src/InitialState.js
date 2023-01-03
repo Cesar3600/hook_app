@@ -1,5 +1,6 @@
 export default {
   cart: [],
+  orders: [],
   products: [
     {
       id: '1',
@@ -44,5 +45,5 @@ export default {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
   ],
-  buyer:[]
+  buyer: [],
 };

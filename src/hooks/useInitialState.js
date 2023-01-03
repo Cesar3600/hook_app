@@ -85,11 +85,19 @@ const useInitialState = () => {
     }));
   };
 
+  const addNewOrder = (payload) => {
+    setState((prevState) => ({
+      ...prevState,
+      orders: [...prevState.orders, payload],
+    }));
+  };
+
   return {
     addToCart,
     removeFromCart,
     calculeQuantityOnCart,
     addToBuyer,
+    addNewOrder,
     state,
   };
 };
